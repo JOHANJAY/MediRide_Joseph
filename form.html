@@ -17,10 +17,8 @@
       class="h-16 p-3.5 bg-black fixed top-0 left-0 right-0 md:h-20 md:border-b-2 lg:h-20 lg:p-8"
     >
       <nav class="h-full flex justify-between items-center">
-       <div
-          class="group flex flex-col justify-center items-center "
-        >
-          <button class="pt-2 md:hidden ">
+        <div class="group flex flex-col justify-center items-center">
+          <button class="pt-2 md:hidden">
             <svg
               class="px-1 py-1 rounded-[50%] active:bg-slate-800"
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +33,7 @@
             </svg>
           </button>
           <div
-           class="absolute hidden w-24 z-10 text-white py-2 bg-black group-hover:flex flex-col justify-center items-center mt-28 ml-7"
+            class="absolute hidden w-24 z-10 text-white py-2 bg-black group-hover:flex flex-col justify-center items-center mt-28 ml-7"
           >
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -66,332 +64,373 @@
         </ul>
       </nav>
     </header>
-    <main class="pt-20 p-5">
-      <form action="#" method="post">
-        <h2
-          class="capitalize font-[Oswald] font-bold text-2xl text-center pb-5"
-        >
-          Please out fill this form to help us treat you better
-        </h2>
-        <section class="pb-3">
-          <p class="font-bold font-[Oswald]">Requesting For:</p>
-          <div class="flex items-center gap-2">
-            <input type="radio" name="for" id="self" class="w-4 h-4" />
-            <label for="self" class="font-[Oswald] text-l pr-4">Self</label>
-            <input type="radio" name="for" id="others" class="w-4 h-4" />
-            <label for="others" class="font-[Oswald] text-l pr-4"
-              >Someone else</label
-            >
-          </div>
-        </section>
-        <section class="pb-3">
-          <p class="capitalize font-[Oswald] font-bold">
-            What is the nature of the emergency?
-          </p>
-          <div class="pb-1">
-            <input type="radio" name="em-type" id="injury" class="w-4 h-4" />
-            <label for="injury" class="font-[Oswald] text-l pr-4">Injury</label>
-          </div>
-          <div class="pb-1">
-            <input
-              type="radio"
-              name="em-type"
-              id="cadiac-arrest"
-              class="w-4 h-4"
-            />
-            <label
-              for="cadiac-arrest"
-              class="capitalize font-[Oswald] text-l pr-4"
-              >cadiac arrest</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="em-type" id="stroke" class="w-4 h-4" />
-            <label for="stroke" class="capitalize font-[Oswald] text-l pr-4"
-              >stroke</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="em-type" id="pregnancy" class="w-4 h-4" />
-            <label for="pregnancy" class="capitalize font-[Oswald] text-l pr-4"
-              >pregnancy/childbirth-related incident</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="em-type" id="sepsis" class="w-4 h-4" />
-            <label for="sepsis" class="capitalize font-[Oswald] text-l pr-4"
-              >sepsis</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="em-type" id="road-acc" class="w-4 h-4" />
-            <label for="road-acc" class="capitalize font-[Oswald] text-l pr-4"
-              >road traffic accident</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="em-type" id="other" class="w-4 h-4" />
-            <label for="other" class="capitalize font-[Oswald] text-l pr-4"
-              >others (Please specify)</label
-            >
-            <textarea
-              name="em-type"
-              id="other"
-              class="block bg-gray-200 w-60 p-1 mt-2 rounded-l rounded-r focus:outline-none font-[Oswald]"
-              placeholder="Emergency Type"
-            ></textarea>
-          </div>
-        </section>
-        <section class="pb-3">
-          <p class="capitalize font-bold font-[Oswald]">
-            symptoms description:
-          </p>
-          <div class="pb-1">
-            <input
-              type="checkbox"
-              name="chest-pain"
-              id="chest-pain"
-              class="w-4 h-4"
-            />
-            <label for="chest-pain" class="capitalize font-[Oswald] text-l pr-4"
-              >severe chest pain</label
-            >
-          </div>
-          <div class="pb-1">
-            <input
-              type="checkbox"
-              name="diff-breathing"
-              id="diff-breathing"
-              class="w-4 h-4"
-            />
-            <label
-              for="diff-breathing"
-              class="capitalize font-[Oswald] text-l pr-4"
-              >difficulty breathing</label
-            >
-          </div>
-          <div class="pb-1">
-            <input
-              type="checkbox"
-              name="unconsciouness"
-              id="unconsciouness"
-              class="w-4 h-4"
-            />
-            <label
-              for="unconsciouness"
-              class="capitalize font-[Oswald] text-l pr-4"
-              >unconsciouness</label
-            >
-          </div>
-          <div class="pb-1">
-            <input
-              type="checkbox"
-              name="heavy-breathing"
-              id="heavy-breathing"
-              class="w-4 h-4"
-            />
-            <label
-              for="heavy-breathing"
-              class="capitalize font-[Oswald] text-l pr-4"
-              >heavy breathing</label
-            >
-          </div>
-          <div class="pb-1">
-            <input
-              type="checkbox"
-              name="severe-pain"
-              id="severe-pain"
-              class="w-4 h-4"
-            />
-            <label
-              for="severe-pain"
-              class="capitalize font-[Oswald] text-l pr-4"
-              >severe pain</label
-            >
-          </div>
-          <div class="pb-1">
-            <input
-              type="checkbox"
-              name="weakness-numbness"
-              id="weakness-numbness"
-              class="w-4 h-4"
-            />
-            <label
-              for="weakness-numbness"
-              class="capitalize font-[Oswald] text-l pr-4"
-              >sudden weakness or numbness</label
-            >
-          </div>
-          <div class="pb-1">
-            <input
-              type="checkbox"
-              name="symp-other"
-              id="symp-other"
-              class="w-4 h-4"
-            />
-            <label for="symp-other" class="capitalize font-[Oswald] text-l pr-4"
-              >other (Please specify)</label
-            >
-            <textarea
-              name="symp-type"
-              id="symp-other"
-              class="block bg-gray-200 w-60 p-1 mt-2 rounded-l rounded-r focus:outline-none font-[Oswald]"
-              placeholder="Describe Symptoms"
-            ></textarea>
-          </div>
-        </section>
-        <section class="pb-3">
-          <p class="capitalize font-bold font-[Oswald]">
-            is the patient conscious?:
-          </p>
-          <div class="pb-1">
-            <input type="radio" name="consciousness" id="yes" class="w-4 h-4" />
-            <label for="yes" class="capitalize font-[Oswald] text-l pr-4"
-              >yes</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="consciousness" id="no" class="w-4 h-4" />
-            <label for="no" class="capitalize font-[Oswald] text-l pr-4"
-              >no</label
-            >
-          </div>
-          <div class="pb-1">
-            <input
-              type="radio"
-              name="consciousness"
-              id="in-out"
-              class="w-4 h-4"
-            />
-            <label for="in-out" class="capitalize font-[Oswald] text-l pr-4"
-              >in and out of consciousness</label
-            >
-          </div>
-        </section>
-        <section class="pb-3">
-          <p class="capitalize font-bold font-[Oswald]">
-            is the patient breathing normally?:
-          </p>
-          <div class="pb-1">
-            <input type="radio" name="breathing" id="yes" class="w-4 h-4" />
-            <label for="yes" class="capitalize font-[Oswald] text-l pr-4"
-              >yes</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="breathing" id="no-diff" class="w-4 h-4" />
-            <label for="no-diff" class="capitalize font-[Oswald] text-l pr-4"
-              >no, difficulty breathing</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="breathing" id="no-not" class="w-4 h-4" />
-            <label for="no-not" class="capitalize font-[Oswald] text-l pr-4"
-              >no, not breathing</label
-            >
-          </div>
-        </section>
-        <section class="pb-3">
-          <p class="capitalize font-bold font-[Oswald]">
-            is the patient bleeding?:
-          </p>
-          <div class="pb-1">
-            <input type="radio" name="bleeding" id="no" class="w-4 h-4" />
-            <label for="no" class="capitalize font-[Oswald] text-l pr-4"
-              >no</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="bleeding" id="minor" class="w-4 h-4" />
-            <label for="minor" class="capitalize font-[Oswald] text-l pr-4"
-              >yes, minor bleeding</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="bleeding" id="severe" class="w-4 h-4" />
-            <label for="severe" class="capitalize font-[Oswald] text-l pr-4"
-              >yes, severe bleeding</label
-            >
-          </div>
-        </section>
-        <section class="pb-3">
-          <p class="capitalize font-bold font-[Oswald]">incident cause:</p>
-          <div class="pb-1">
-            <input type="radio" name="cause" id="no" class="w-4 h-4" />
-            <label for="no" class="capitalize font-[Oswald] text-l pr-4"
-              >no</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="cause" id="yes" class="w-4 h-4" />
-            <label for="yes" class="capitalize font-[Oswald] text-l pr-4"
-              >yes (please specify)</label
-            >
-            <textarea
-              name="cause"
-              id="yes"
-              class="block bg-gray-200 w-60 p-1 mt-2 rounded-l rounded-r focus:outline-none font-[Oswald]"
-              placeholder="Incident Cause"
-            ></textarea>
-          </div>
-        </section>
-        <section class="pb-3">
-          <p class="capitalize font-bold font-[Oswald]">
-            does the patient have any known medical conditions or history that
-            the medical team should be aware of?:
-          </p>
-          <div class="pb-1">
-            <input type="radio" name="med-history" id="no" class="w-4 h-4" />
-            <label for="no" class="capitalize font-[Oswald] text-l pr-4"
-              >no</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="med-history" id="yes" class="w-4 h-4" />
-            <label for="yes" class="capitalize font-[Oswald] text-l pr-4"
-              >yes (please specify)</label
-            >
-            <textarea
-              name="med-history"
-              id="yes"
-              class="block bg-gray-200 w-60 p-1 mt-2 rounded-l rounded-r focus:outline-none font-[Oswald]"
-              placeholder="Medical History"
-            ></textarea>
-          </div>
-        </section>
-        <section class="pb-3">
-          <p class="capitalize font-bold font-[Oswald]">allergies:</p>
-          <div class="pb-1">
-            <input type="radio" name="allergies" id="no" class="w-4 h-4" />
-            <label for="no" class="capitalize font-[Oswald] text-l pr-4"
-              >no</label
-            >
-          </div>
-          <div class="pb-1">
-            <input type="radio" name="allergies" id="yes" class="w-4 h-4" />
-            <label for="yes" class="capitalize font-[Oswald] text-l pr-4"
-              >yes (please specify)</label
-            >
-            <textarea
-              name="allergies"
-              id="yes"
-              class="block bg-gray-200 w-60 p-1 mt-2 rounded-l rounded-r focus:outline-none font-[Oswald]"
-              placeholder="Allergies"
-            ></textarea>
-          </div>
-        </section>
-        <div class="flex justify-center">
-          <button
-            type="submit"
-            class="block focus:bg-[#FFAD59] bg-[#FF7E7B] mt-3 py-3 px-14 rounded-3xl text-white font-bold font-[Oswald] text-2xl"
+    <main
+      class="pt-20 bg-[url('files/ambu.jpg')] bg-no-repeat bg-cover bg-center"
+    >
+      <div class="w-full p-7 bg-black/50 ">
+        <form action="#" method="post">
+          <h2
+            class="capitalize font-[Oswald] font-bold text-white text-2xl text-center pb-5"
           >
-            Submit
-          </button>
-        </div>
-      </form>
+            Please out fill this form to help us treat you better
+          </h2>
+          <section class="pb-3">
+            <p class="font-bold font-[Oswald] text-white">Requesting For:</p>
+            <div class="flex items-center gap-2">
+              <input type="radio" name="for" id="self" class="w-4 h-4" />
+              <label for="self" class="font-[Oswald] text-white text-l pr-4">Self</label>
+              <input type="radio" name="for" id="others" class="w-4 h-4" />
+              <label for="others" class="font-[Oswald] text-white text-l pr-4"
+                >Someone else</label
+              >
+            </div>
+          </section>
+          <section class="pb-3">
+            <p class="capitalize font-[Oswald] font-bold text-white">
+              What is the nature of the emergency?
+            </p>
+            <div class="pb-1">
+              <input type="radio" name="em-type" id="injury" class="w-4 h-4" />
+              <label for="injury" class="font-[Oswald] text-white text-l pr-4"
+                >Injury</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="radio"
+                name="em-type"
+                id="cadiac-arrest"
+                class="w-4 h-4"
+              />
+              <label
+                for="cadiac-arrest"
+               class="font-[Oswald] text-white text-l pr-4"
+                >cadiac arrest</label
+              >
+            </div>
+            <div class="pb-1">
+              <input type="radio" name="em-type" id="stroke" class="w-4 h-4" />
+              <label for="stroke" class="font-[Oswald] text-white text-l pr-4"
+                >stroke</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="radio"
+                name="em-type"
+                id="pregnancy"
+                class="w-4 h-4"
+              />
+              <label
+                for="pregnancy"
+                class="font-[Oswald] text-white text-l pr-4"
+                >pregnancy/childbirth-related incident</label
+              >
+            </div>
+            <div class="pb-1">
+              <input type="radio" name="em-type" id="sepsis" class="w-4 h-4" />
+              <label for="sepsis" class="font-[Oswald] text-white text-l pr-4"
+                >sepsis</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="radio"
+                name="em-type"
+                id="road-acc"
+                class="w-4 h-4"
+              />
+              <label for="road-acc" class="font-[Oswald] text-white text-l pr-4"
+                >road traffic accident</label
+              >
+            </div>
+            <div class="pb-1">
+              <input type="radio" name="em-type" id="other" class="w-4 h-4" />
+              <label for="other" class="font-[Oswald] text-white text-l pr-4"
+                >others (Please specify)</label
+              >
+              <textarea
+                name="em-type"
+                id="other"
+                class="block bg-gray-200 w-60 p-1 mt-2 rounded-l rounded-r focus:outline-none font-[Oswald]"
+                placeholder="Emergency Type"
+              ></textarea>
+            </div>
+          </section>
+          <section class="pb-3">
+            <p class="capitalize font-[Oswald] font-bold text-white">
+              symptoms type:
+            </p>
+            <div class="pb-1">
+              <input
+                type="checkbox"
+                name="chest-pain"
+                id="chest-pain"
+                class="w-4 h-4"
+              />
+              <label
+                for="chest-pain"
+               class="font-[Oswald] text-white text-l pr-4"
+                >severe chest pain</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="checkbox"
+                name="diff-breathing"
+                id="diff-breathing"
+                class="w-4 h-4"
+              />
+              <label
+                for="diff-breathing"
+                class="font-[Oswald] text-white text-l pr-4"
+                >difficulty breathing</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="checkbox"
+                name="unconsciouness"
+                id="unconsciouness"
+                class="w-4 h-4"
+              />
+              <label
+                for="unconsciouness"
+                class="font-[Oswald] text-white text-l pr-4"
+                >unconsciouness</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="checkbox"
+                name="heavy-breathing"
+                id="heavy-breathing"
+                class="w-4 h-4"
+              />
+              <label
+                for="heavy-breathing"
+                class="font-[Oswald] text-white text-l pr-4"
+                >heavy breathing</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="checkbox"
+                name="severe-pain"
+                id="severe-pain"
+                class="w-4 h-4"
+              />
+              <label
+                for="severe-pain"
+                class="font-[Oswald] text-white text-l pr-4"
+                >severe pain</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="checkbox"
+                name="weakness-numbness"
+                id="weakness-numbness"
+                class="w-4 h-4"
+              />
+              <label
+                for="weakness-numbness"
+                class="font-[Oswald] text-white text-l pr-4"
+                >sudden weakness or numbness</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="checkbox"
+                name="symp-other"
+                id="symp-other"
+                class="w-4 h-4"
+              />
+              <label
+                for="symp-other"
+                class="font-[Oswald] text-white text-l pr-4"
+                >other (Please specify)</label
+              >
+              <textarea
+                name="symp-type"
+                id="symp-other"
+                class="block bg-gray-200 w-60 p-1 mt-2 rounded-l rounded-r focus:outline-none font-[Oswald]"
+                placeholder="Describe Symptoms"
+              ></textarea>
+            </div>
+          </section>
+          <section class="pb-3">
+            <p class="capitalize font-[Oswald] font-bold text-white">
+              is the patient conscious?:
+            </p>
+            <div class="pb-1">
+              <input
+                type="radio"
+                name="consciousness"
+                id="yes"
+                class="w-4 h-4"
+              />
+              <label for="yes" class="font-[Oswald] text-white text-l pr-4"
+                >yes</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="radio"
+                name="consciousness"
+                id="no"
+                class="w-4 h-4"
+              />
+              <label for="no" class="font-[Oswald] text-white text-l pr-4"
+                >no</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="radio"
+                name="consciousness"
+                id="in-out"
+                class="w-4 h-4"
+              />
+              <label for="in-out" class="font-[Oswald] text-white text-l pr-4"
+                >in and out of consciousness</label
+              >
+            </div>
+          </section>
+          <section class="pb-3">
+            <p class="capitalize font-[Oswald] font-bold text-white">
+              is the patient breathing normally?:
+            </p>
+            <div class="pb-1">
+              <input type="radio" name="breathing" id="yes" class="w-4 h-4" />
+              <label for="yes" class="font-[Oswald] text-white text-l pr-4"
+                >yes</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="radio"
+                name="breathing"
+                id="no-diff"
+                class="w-4 h-4"
+              />
+              <label for="no-diff"class="font-[Oswald] text-white text-l pr-4"
+                >no, difficulty breathing</label
+              >
+            </div>
+            <div class="pb-1">
+              <input
+                type="radio"
+                name="breathing"
+                id="no-not"
+                class="w-4 h-4"
+              />
+              <label for="no-not" class="font-[Oswald] text-white text-l pr-4"
+                >no, not breathing</label
+              >
+            </div>
+          </section>
+          <section class="pb-3">
+            <p class="capitalize font-[Oswald] font-bold text-white">
+              is the patient bleeding?:
+            </p>
+            <div class="pb-1">
+              <input type="radio" name="bleeding" id="no" class="w-4 h-4" />
+              <label for="no" class="font-[Oswald] text-white text-l pr-4"
+                >no</label
+              >
+            </div>
+            <div class="pb-1">
+              <input type="radio" name="bleeding" id="minor" class="w-4 h-4" />
+              <label for="minor" class="font-[Oswald] text-white text-l pr-4"
+                >yes, minor bleeding</label
+              >
+            </div>
+            <div class="pb-1">
+              <input type="radio" name="bleeding" id="severe" class="w-4 h-4" />
+              <label for="severe" class="font-[Oswald] text-white text-l pr-4"
+                >yes, severe bleeding</label
+              >
+            </div>
+          </section>
+          <section class="pb-3">
+            <p class="capitalize font-[Oswald] font-bold text-white">incident cause:</p>
+            <div class="pb-1">
+              <input type="radio" name="cause" id="no" class="w-4 h-4" />
+              <label for="no" class="font-[Oswald] text-white text-l pr-4"
+                >no</label
+              >
+            </div>
+            <div class="pb-1">
+              <input type="radio" name="cause" id="yes" class="w-4 h-4" />
+              <label for="yes" class="font-[Oswald] text-white text-l pr-4"
+                >yes (please specify)</label
+              >
+              <textarea
+                name="cause"
+                id="yes"
+                class="block bg-gray-200 w-60 p-1 mt-2 rounded-l rounded-r focus:outline-none font-[Oswald]"
+                placeholder="Incident Cause"
+              ></textarea>
+            </div>
+          </section>
+          <section class="pb-3">
+            <p class="capitalize font-[Oswald] font-bold text-white">
+              does the patient have any known medical conditions or history that
+              the medical team should be aware of?:
+            </p>
+            <div class="pb-1">
+              <input type="radio" name="med-history" id="no" class="w-4 h-4" />
+              <label for="no" class="capitalize font-[Oswald] font-bold text-white"
+                >no</label
+              >
+            </div>
+            <div class="pb-1">
+              <input type="radio" name="med-history" id="yes" class="w-4 h-4" />
+              <label for="yes" class="capitalize font-[Oswald] font-bold text-white"
+                >yes (please specify)</label
+              >
+              <textarea
+                name="med-history"
+                id="yes"
+                class="block bg-gray-200 w-60 p-1 mt-2 rounded-l rounded-r focus:outline-none font-[Oswald]"
+                placeholder="Medical History"
+              ></textarea>
+            </div>
+          </section>
+          <section class="pb-3">
+            <p class="capitalize font-[Oswald] font-bold text-white">allergies:</p>
+            <div class="pb-1">
+              <input type="radio" name="allergies" id="no" class="w-4 h-4" />
+              <label for="no" class="capitalize font-[Oswald] font-bold text-white"
+                >no</label
+              >
+            </div>
+            <div class="pb-1">
+              <input type="radio" name="allergies" id="yes" class="w-4 h-4" />
+              <label for="yes" class="capitalize font-[Oswald] font-bold text-white"
+                >yes (please specify)</label
+              >
+              <textarea
+                name="allergies"
+                id="yes"
+                class="block bg-gray-200 w-60 p-1 mt-2 rounded-l rounded-r focus:outline-none font-[Oswald]"
+                placeholder="Allergies"
+              ></textarea>
+            </div>
+          </section>
+          <div class="flex justify-center">
+            <a
+              href="submission.html"
+              class="focus:bg-[#FFAD59] block bg-[#FF7E7B] mt-3 py-3 text-center rounded-3xl text-white font-bold font-[Oswald] text-2xl w-52"
+              >Submit</a
+            >
+          </div>
+        </form>
+      </div>
     </main>
-    <footer class="p-4 bg-black mt-10">
-      <div class="flex items-center md:justify-center">
+    <footer class="p-4 bg-black">
+      <div class="flex items-center justify-center">
         <span class="text-4xl md:text-6xl lg:text-6xl">🚑</span>
         <h1
           class="font-[times] text-white text-3xl md:text-6xl lg:text-6xl pt-2.5"
@@ -399,54 +438,10 @@
           MediRide
         </h1>
       </div>
-      <div class="py-1 md:hidden">
-        <div class="flex gap-1 mb-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="50px"
-            viewBox="0 -960 960 960"
-            width="40px"
-            fill="#274483"
-          >
-            <path
-              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
-            />
-          </svg>
-          <div>
-            <p class="font-bold font-[Oswald] text-white text- l">Email</p>
-            <a
-              href="mailto:chijoseph99@gmail.com"
-              class="font-[Oswald] text-white text-sm"
-              >chijoseph99@gmail.com</a
-            >
-          </div>
-        </div>
-        <div class="flex gap-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="50px"
-            viewBox="0 -960 960 960"
-            width="40px"
-            fill="#274483"
-          >
-            <path
-              d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
-            />
-          </svg>
-          <div>
-            <p class="text-white font-bold font-[Oswald] text-l">Phone</p>
-            <a
-              href="tel:+2349026735862"
-              class="text-white font-[Oswald] text-sm"
-              >+2349026735862</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="flex items-center md:justify-center gap-2">
+      <div class="flex items-center justify-center gap-2">
         <a
           href="mailto:chijoseph99@gmail.com"
-          class="hidden md:flex md:w-[70px] md:h-[70px]"
+          class="hidden md:flex md:w-[50px] md:h-[50px]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -462,7 +457,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 50 50"
-            class="w-[30px] h-[30px] md:w-14 md:h-14"
+            class="w-[30px] h-[30px] md:w-10 md:h-10"
             fill="#fff"
           >
             <path
@@ -474,7 +469,7 @@
           href="https://www.instagram.com/johan.the.13th?utm_source=qr&igsh=NG55cXl0eGV2aHFw"
         >
           <svg
-            class="w-[35px] h-[35px] md:w-[58px] md:h-[58px]"
+            class="w-[35px] h-[35px] md:w-[44px] md:h-[44px]"
             viewBox="0 0 25 25"
             fill="#fff"
             xmlns="http://www.w3.org/2000/svg"
@@ -489,7 +484,7 @@
           href="https://www.linkedin.com/in/john-joseph-120752251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         >
           <svg
-            class="w-[28px] h-[28px] md:w-12 md:h-12"
+            class="w-[28px] h-[28px] md:w-9 md:h-9"
             viewBox="0 0 21 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
